@@ -1,3 +1,8 @@
+# Wepy
+dist
+.DS_Store
+.wepycache
+
 # Logs
 logs
 *.log

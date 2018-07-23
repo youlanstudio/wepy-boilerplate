@@ -1,0 +1,31 @@
+<style lang="scss">
+</style>
+
+<script>
+import wepy from 'wepy'
+import 'wepy-async-function'
+
+export default class extends wepy.app {
+  config = {
+    pages: ['pages/index'],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: 'WeChat',
+      navigationBarTextStyle: 'black'
+    }
+  }
+
+  constructor() {
+    super()
+    // 修复request并发问题
+    // this.use('requestfix')
+    // 支持Promise
+    this.use('promisify')
+  }
+
+  onLaunch() {
+    console.log('on launch')
+  }
+}
+</script>
