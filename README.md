@@ -19,7 +19,14 @@ npm install -g wepy-cli
 wepy init youlanstudio/wepy-boilerplate myproject
 ```
 
-2.  编译，下面的编译命令，根据需要，任选其一
+2.  安装依赖
+
+```bash
+cd myproject
+npm install
+```
+
+3.  编译(根据需要，下面的编译命令，任选其一)
 
 ```Bash
 # 编译生成微信小程序项目

@@ -1,10 +1,10 @@
-import wepy from 'wepy'
+import wepy from 'wepy';
 
 export default class Index extends wepy.page {
   config = {
-    navigationBarTitleText: 'test'
-  }
+    navigationBarTitleText: 'Boilerplate'
+  };
   onLoad() {
-    console.log('onLoad')
+    console.log('onLoad');
   }
 }
